@@ -53,38 +53,14 @@ window.addEventListener("resize", () => {
   }
 });
 
-// window.addEventListener("resize", () => {
-//   let w = window.outerWidth;
+/*************** Navigation ******************/
 
-//   const zeroDiv = document.querySelector(".zero");
-//   const leftPanel = document.querySelector(".left-panel");
+const home = document.querySelector("#home");
+const portfolio = document.querySelector("#portfolio");
+const about = document.querySelector("#about");
+const contact = document.querySelector("#contact");
 
-//   console.log(zeroDiv);
-//   console.log(w);
-//   if (w < 1200 && !zeroDiv) {
-//     // if (document.querySelector(".zero").classList.contains("zero")) {
-//     //   return;
-//     // }
-//     rightPanel.insertAdjacentHTML(
-//       "afterbegin",
-//       `<div class="zero snap">
-//       <h1>Hello, Mobile</h1>
-//     </div>`
-//     );
-
-//     leftPanel.remove();
-//   }
-
-//   if (w > 1200 && !leftPanel) {
-//     return container.insertAdjacentHTML(
-//       "afterbegin",
-//       `<div class="left-panel">
-//           <h1>Hello Desktop</h1>
-//           </div>`
-//     );
-//   }
-// });
-
-// function checkElementExist(el) {
-//   return;
-// }
+window.addEventListener("load", (e) => {
+  console.log(e);
+  console.log("Page is fully loaded.");
+});
